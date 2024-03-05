@@ -1,0 +1,99 @@
+/* LOGIN */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg,  #f00 0%, #202020 35%, #F3F3F3 100%);
+    font-family: sans-serif;
+    color: #202020; 
+    transition: background-color 0.3s ease;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    width: 30%;
+    background-color: #F3F3F3; /* Color de fondo del formulario */
+    padding: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave del formulario */
+}
+
+form:hover {
+    transform: translateY(-5px); /* Levitar ligeramente al pasar el cursor */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el cursor */
+}
+
+.btn-primary {
+    width: 100%;
+    border: none;
+    border-radius: 0; /* Border-radius a 0 */
+    background: linear-gradient(90deg, #f00 0%, #202020 35%, #F3F3F3 100%);
+    color: #F3F3F3; /* Color de texto del botón */
+    font-weight: bold;
+    padding: 15px 0; /* Aumenta el relleno para que el botón sea más visible */
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease; /* Transición suave del botón */
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #F3F3F3 0%, #202020 35%, #f00 100%);
+    color:#F3F3F3; /* Cambio de color de texto al pasar el cursor */
+    font-size: 18px; /* Aumenta el tamaño del texto al pasar el cursor */
+}
+
+.btn-primary:focus {
+    background: linear-gradient(90deg, #f00, rgba(0, 0, 0, 0.8) 35%, rgba(255, 255, 255, 0.8) 100%);
+    font-size: 18px; /* Aumenta el tamaño del texto al enfocar */
+}
+
+.form-control {
+    color: #202020; /* Color de texto de entrada */
+    border: none;
+    border-bottom: 2px solid #F3F3F3; /* Línea inferior gris */
+    border-radius: 0; /* Border-radius a 0 */
+    padding: 10px 0;
+    margin-bottom: 20px;
+    transition: border-bottom-color 0.3s ease; /* Transición suave del color de la línea inferior */
+}
+
+.form-control:focus {
+    border-bottom-color: #007bff; /* Cambio de color de la línea inferior al enfocar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil al enfocar */
+}
+
+.form-text {
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Transición suave del color del enlace */
+}
+
+.form-text:hover {
+    color: #202020; /* Cambio de color del enlace al pasar el cursor */
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.form-label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}

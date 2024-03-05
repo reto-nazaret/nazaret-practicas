@@ -1,0 +1,13 @@
+IMPORTAR AL HTML EN EL QUE SE PRETENDE USAR LA TABLA LO SIGUIENTE:
+
+1. Link del script contenedor de la tabla: "miscript.js"
+
+2. Link del script de TABULATOR: "assets/js/tabulator/js/tabulator.min.js"
+
+3. Crear <div> contenedor de la tabla con el nombre asignado en nustro script:
+
+    En este caso: "example-table"
+
+Por ultimo añadimos el script de css de TABULATOR:  "assets/js/tabulator/css/tabulator.min.css"
+
+Y en teoría debería funcionar.
